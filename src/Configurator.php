@@ -153,6 +153,7 @@ final class Configurator
         }
 
         foreach ($metadata as $meta) {
+            assert(is_object($meta));
             assert($meta instanceof SchemaModifierInterface);
 
             // need relation definition
